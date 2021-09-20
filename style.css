@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "aside   main"
+    "footer footer";
+}
+header {
+  background-color: coral;
+  grid-area: header;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+ul {
+  list-style: none;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  background-color: cadetblue;
+  grid-area: aside;
+  padding-right: 30px;
+  font-size: 1.3rem;
+}
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: coral;
+  padding: 20px;
+  text-align: center;
+  grid-area: footer;
+}
